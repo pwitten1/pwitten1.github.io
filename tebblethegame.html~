@@ -1,101 +1,53 @@
-<!DOCTYPE html>
-<html>
-<h1>Tebble</h1>
-<p>
-Team Manager:
-<br>
-Paul Witten (pwitten@princeton.edu)
-<br>
-<br>
-Other Members:
-<br>
-Seho Young (sehoy@princeton.edu)
-<br>
-Zhan Xian Chen (zxchen@princeton.edu)
-<br>
-Michal Prenovitz (michalp@princeton.edu)
-</p>
+Tebble
 
-<br>
-<br>
-<p>
+Team Manager:
+Paul Witten (pwitten@princeton.edu)
+
+Other Members:
+Seho Young (sehoy@princeton.edu)
+Zhan Xian Chen (zxchen@princeton.edu)
+Michal Prenovitz (michalp@princeton.edu)
+
 Overview:
-<br>
 This project is aimed at creating a mobile game application modeled after tetris and scrabble using React Native and Google Firebase. The game itself is a combination of tetris and scrabble. Instead of having different 4-block pieces that fall down, blocks of letters drop down with a certain point value associated to them just as there are in scrabble. The specific rules of the game are not decided and will instead be adjusted to what we can achieve programmatically but in general it will follow the trend of forming words from falling blocks. The user will have to tap on formed words to clear them in order to prevent freebies. The goal is to create a game that trains both vocabulary and spatial reasoning. To do so, the game also maintains a record of all words that have been created by a user while playing and provides a dictionary look-up feature as well (time permitting).
 In addition to the core functionalities of the game, we intend to implement features such as user accounts, global and local leaderboards, friend lists and such to introduce a social factor to the game and stimulate competition and interest. Users will also be able to link their accounts to their social media accounts such as Facebook or Twitter for easier account management and access.
-</p>
-<br>
-<br>
-<p>
-Requirements and Target Audiences:
-<br>
-This application is intended for all users who have a decent background in the English language, although it is possible in the future to include other latin-based languages. Its main intended use is to provide entertainment but can also serve as a learning tool to pick up new words. A similar game in the Play Store currently is Word Fall Brain Tetris(WFBT). The main difference between WFBT and our application is that it automatically clears any formed words. By not doing so, our application achieves the goal of ensuring that the user knows the word to earn points for it. This rewards people with a wider vocabulary as the app should do.
-</p>
-<br>
-<br>
 
-<p>
+Requirements and Target Audiences:
+This application is intended for all users who have a decent background in the English language, although it is possible in the future to include other latin-based languages. Its main intended use is to provide entertainment but can also serve as a learning tool to pick up new words. A similar game in the Play Store currently is Word Fall Brain Tetris(WFBT). The main difference between WFBT and our application is that it automatically clears any formed words. By not doing so, our application achieves the goal of ensuring that the user knows the word to earn points for it. This rewards people with a wider vocabulary as the app should do.
+
 Functionality:
-<br>
 Home Screen: This screen provides several functionalities. 
 Allow users to access the actual game via a play button.
 Allow users to login to/sign up for an account.
 Allow access to settings for the game.
-<br>
+
 Game Screen: This screen is mainly for playing the game, but also provides access to the pause screen.
-<br>
+
 Pause screen: Used when user is in the middle of a game but has other things to tend to. Also gives access to the settings screen.
-<br>
+
 Login/Signup Screen: Allows users to create accounts via their play store email or apple id. Also provides the option to link their accounts to their social media. Log in would require an ID and password. Quick login can also be made available given that the account is linked to a social media account.
-<br>
+
 Settings screen: Allows users to change the settings to the game. Possible setting changes include graphics quality, volume, and logout.
-</p>
 
-<br>
-<br>
-
-<p>
 Design:
-<br>
 Interface:
 User interface on phone.  This is where the user will play the game, send their results to the leaderboard, and interact with the broader context of our user base.  This end of our program will be written in Javascript with react native.
-<br>
 Middle tier:
 This portion of our project handles the in-game logic.  This section will interact with both the the user interface and the backend database.  During a game this portion will process the different actions that occur, and respond appropriately.  This portion of our project will be written in Python.
-<br>
 End tier:
 This portion of the game will store any long-term data.  This includes information like the aforementioned leaderboards, as well as friend lists, and connections to facebook, other social media.  This portion of the project will be created using Google Firebase.
-</p>
 
-<br>
-<br>
 
-<p>
 Timeline:
-<br>
 Spring Break: Establish the rules of the game in their entirety (or at least to the point of it being playable) and begin front end mockups.
-<br>
 Week 7: Begin prototype. The goal this week is to establish familiarity with technologies and set them up/integrate them. Additionally, we will want to have a concrete idea of the design of our backend. 
-<br>
 Week 8: Work on prototype. Focus on completing backend as well as middle tier features in order of necessity or completeness.
-<br>
 Week 9: Complete prototype. Prototype should have basic implementation of the logic of the game as well as a fully fleshed out backend, without heavy front end features or network/multiplayer features implemented.
-<br>
 Week 10: Focus on optimizing and completing middle tier features and begin work on a visuals and front end features. 
-<br>
 Week 11: Ensure that middle tier features are bug free and all corner cases have been covered. Focus on establishing a rich front end experience and optimum user interface. Ensure project is ready for Alpha test.
-<br>
 Week 12: Focus on making sure the project is bug/glitch free, and ensure UI is fresh and clean. Ready for Beta test.
 Reading Period: More bug testing/fixing, Focus on adding any additional features like network/multiplayer features etc.
-</p>
 
-<br>
-
-<p>
 Risks and outcomes:
-<br>
 Possibly the most significant challenge that this project poses is getting accustomed to JavaScript, React Native, and Firebase, environments that not all of us are very experienced with. In addition, not all of us are experienced with creating game applications. However we are all very passionate programmers who take interest in learning new things, and will do everything in our ability to overcome any challenge and make the best product we can produce.
 Another risk is too little or too much functionality in the game, of which the amount is of crucial importance to the user experience. We will try to prevent this from the early stages of project planning, but in case we miss anything, the Alpha and Beta tests should refine the game even further, making it as complete and efficient a game as possible.
-</p>
-</body>
-</html>
